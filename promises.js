@@ -31,12 +31,19 @@ function creatPost(post) {
 
 //Async / Awaite
 
-async function init() {
-  await creatPost({ title: "post three", body: "this post three" });
+// async function init() {
+//   await creatPost({ title: "post three", body: "this post three" });
 
-  getPosts();
+//   getPosts();
+// }
+// init()
+//async / await with fetch
+async function fetchUsers() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const data = await res.json();
+  console.log(data);
 }
-init()
+fetchUsers();
 //promise.all
 // const promise1 = Promise.resolve("hello  world");
 // const promise2 = 10;
