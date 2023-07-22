@@ -32,19 +32,13 @@ function creatPost(post) {
 
 //Async / Awaite
 
-// async function init() {
-//   await creatPost({ title: "post three", body: "this post three" });
+async function init() {
+  await creatPost({ title: "post three", body: "this post three" });
 
-//   getPosts();
-// }
-// init()
-//async / await with fetch
-async function fetchUsers() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  const data = await res.json();
-  console.log(data);
+  getPosts();
 }
-fetchUsers();
+init()
+
 //promise.all
 // const promise1 = Promise.resolve("hello  world");
 // const promise2 = 10;
@@ -57,3 +51,4 @@ fetchUsers();
 // Promise.all([promise1, promise2, promise3, promise4]).then((values) =>
 //   console.log(values)
 // );
+
