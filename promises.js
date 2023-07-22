@@ -29,6 +29,7 @@ function creatPost(post) {
 //   .then(getPosts)
 //   .catch((err) => console.log(err));
 
+
 //Async / Awaite
 
 // async function init() {
