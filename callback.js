@@ -19,3 +19,4 @@ function creatPost(post) {
 
 getPosts();
 creatPost({ title: "post three", body: "this post three" });
+
