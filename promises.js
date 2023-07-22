@@ -29,6 +29,7 @@ function creatPost(post) {
 //   .then(getPosts)
 //   .catch((err) => console.log(err));
 
+
 //Async / Awaite
 
 async function init() {
@@ -37,6 +38,7 @@ async function init() {
   getPosts();
 }
 init()
+
 //promise.all
 // const promise1 = Promise.resolve("hello  world");
 // const promise2 = 10;
@@ -49,3 +51,4 @@ init()
 // Promise.all([promise1, promise2, promise3, promise4]).then((values) =>
 //   console.log(values)
 // );
+
