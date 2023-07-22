@@ -4,7 +4,7 @@ const posts = [
 ];
 
 function getPosts() {
-  //return promise to prevent excu seond then until geposts finish
+  //return promise to prevent excu second then() until geposts finish
   return new Promise((resolve, error) => {
     setTimeout(() => {
       let allposts = "";
